@@ -1,4 +1,4 @@
-for j in a ; do
+for j in d g k ; do
 	for dir in xtb-goat/${j}/${j^^}_CONF; do
 		mkdir MP2/${j}/
 		for conformer in 0 1 2 3 4 5; do
