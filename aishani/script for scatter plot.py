@@ -9,7 +9,7 @@ all_aas = []
 all_energies = []
  
 for xaa in categories:
-   with open(xaa + "/" + xaa.upper() + ".Relative-ENERGIES-kcal-per-mol", 'r') as file:
+   with open(xaa + "/" + xaa.upper() + ".Relative-ENERGIES", 'r') as file:
         energies = [float(line.strip()) for line in file if line.strip()]
         all_aas.extend([xaa.upper()] * len(energies))
         all_energies.extend(energies)
