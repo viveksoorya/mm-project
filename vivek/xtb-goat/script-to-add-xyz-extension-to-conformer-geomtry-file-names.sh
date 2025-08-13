@@ -1,8 +1,7 @@
-for j in a; do
+for j in g h i k l; do
 	cd ${j}/${j^^}_CONF
 	for file in *; do
-		echo ${file}
 		mv ${file} ${file}.xyz
 	done
-	cd ..
+	cd ../..
 done
