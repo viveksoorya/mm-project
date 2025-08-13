@@ -3,7 +3,7 @@
 # cat the next n lines to a file k in 0 1 2 3 4 5
 # after each cat skip 2 lines
 
-for xaa in a c d e f g h i k l; do
+for xaa in m n p q r s t v w y; do
 	file=${xaa}/${xaa}.finalensemble.xyz
 	n=$(head -n 1 "$file" | awk '{print $1}')
 	
