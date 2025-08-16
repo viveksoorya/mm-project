@@ -9,7 +9,7 @@ all_aas = []
 all_energies = []
  
 for xaa in categories:
-   with open(xaa + "/" + xaa.upper() + ".Relative-ENERGIES-kcal-per-mol", 'r') as file:
+   with open(xaa + "/Relative-ENERGIES-kcal-per-mol", 'r') as file:
         energies = [float(line.strip()) for line in file if line.strip()]
         all_aas.extend([xaa.upper()] * len(energies))
         all_energies.extend(energies)
@@ -19,5 +19,5 @@ ax.scatter(all_aas, all_energies, marker='_', s=100)
 ax.set_xlabel('Amino Acid ')
 ax.set_ylabel('kcal per mol')
 plt.grid(True, axis='y')
-plt.savefig("kcal-mol-1-dashes.png")
+plt.savefig("Relative-ENERGIES-kcal-mol-1-dashes-AMINOACIDS-A-through-L.png")
 plt.close(fig)

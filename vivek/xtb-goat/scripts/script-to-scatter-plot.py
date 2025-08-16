@@ -8,7 +8,7 @@ x_pos = np.arange(len(categories))
 for xaa in categories:
 
     fig, ax = plt.subplots(figsize=(12, 6))
-    with open(xaa + "/" + xaa.upper() + ".ENERGIES", 'r') as file:
+    with open(xaa + "/" + "ENERGIES", 'r') as file:
         energies = [float(line.strip()) for line in file if line.strip()]
     category_stack = np.full(6, xaa)
     ax.scatter(category_stack, energies, marker='x', s=100)
