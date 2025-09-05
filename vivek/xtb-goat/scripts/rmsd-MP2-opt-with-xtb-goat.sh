@@ -1,4 +1,4 @@
-dir=/home/vivek/mm-project/vivek/xtb-goat
+dir=/home/uni/molmod/mm-project/vivek/xtb-goat
 cd $dir
 method=MP2-opt
 cd $method
